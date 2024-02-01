@@ -348,6 +348,7 @@ img{
     margin-top: 270px;
     display: flex;
     flex-wrap: wrap-reverse;
+    margin-bottom: 200px;
 }
 
 .main_slide4 .chef-feed{
@@ -432,6 +433,56 @@ img{
     font-size: 11px;
     padding-top: 8px;
     line-height: 13px;
+}
+
+.letter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.letter-head{
+    flex: 0.5;
+}
+
+.letter-head h2{
+    font-size: 30px;
+}
+
+.letter-head span{
+    color: red;
+}
+
+.letter-input{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex: 0.5;
+}
+
+.letter-input input{
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 219, 185);
+}
+
+.letter-input div{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255,219,185);
+}
+
+.letter-input .red_btn{
+    margin: 0;
+    font-size: 18px;
+    box-shadow: none;
+    border-radius: 0 10px 10px 0;
 }
 
 @media only screen and (max-width: 760px) {
@@ -531,6 +582,43 @@ img{
         width: 80%;
         margin-bottom: 20px;
     }
+
+    .main_slide4{
+        margin-top: 150px;
+
+    }
+
+    .main-slide4 .chef-feed{
+        flex: 1;
+    }
+
+    .main_slide4 .chef{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .main-slide4 .chef img{
+        width: 80vw;
+    }
+
+    .letter-head h2{
+        font-size: 20px;
+    }
+
+    .letter-input input{
+        font-size: 12px;
+        padding: 15px;
+        width: 50vw;
+    }
+
+    .letter-input .red_btn{
+        line-height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -588,6 +676,21 @@ img{
 
     .main_slide3 .dsgn{
         display: none;
+    }
+
+    .main_slide4 .chef-vic div p{
+        display: none;
+        font-size: 0;
+        color: blue;
+    }
+
+    .letter{
+        justify-content: center;
+    }
+
+    .letter-head{
+        flex: 1;
+        text-align: center;
     }
 
 }
